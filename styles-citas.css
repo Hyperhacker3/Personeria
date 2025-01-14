@@ -1,0 +1,91 @@
+/* Estilos básicos */
+
+@font-face {
+    font-family: Heebo;
+    src: url('Heebo-Regular.ttf');
+}
+
+body {
+    font-family: Heebo;
+    background-color: #F1F9EC;
+    color: #074a29;
+    margin: 0;
+    padding-right: 1em;
+}
+
+/* Barra de navegación fija */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #afdc97;
+    color: #074a29;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000; /* Asegura que esté sobre el contenido */
+}
+
+nav h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Estilos para el botón con ícono */
+nav button {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+nav button .back-icon {
+    width: 20px; /* Ajusta el tamaño del ícono */
+    height: 20px;
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+nav button i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+/* Contenido principal */
+main {
+    padding: 60px 20px 20px; /* Añade espacio arriba para la barra fija */
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Formulario */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 15px;
+    background-color: #0C703F;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #074a29;
+}
